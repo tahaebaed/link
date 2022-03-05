@@ -1,8 +1,9 @@
-import SignUp from './components/sign/SignUp';
+import SignUp from './pages/SignUp';
+import './App.scss';
 
 function App() {
   return (
-    <div >
+    <div>
       <SignUp />
     </div>
   );
