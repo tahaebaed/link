@@ -1,21 +1,16 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../store/context/AuthContext'
-import { auth } from '../store/context/FireContext';
+import { AuthContext } from '../store/context/AuthContext';
+// import { auth } from '../store/context/FireContext'; // * if we will uncomment it
 
 const Home = () => {
-  const {user}=useContext(AuthContext)
-  const navigate=useNavigate()
-  const logOut=()=>{
-    auth.signOut();
-    if(!user){    navigate("/signIn")  }
-  }
-  console.log(user,"hello from home");
-  return (
-    <div> "hello"
-    <button onClick={logOut}>LogOut</button>
-    </div>
-  )
-}
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+  return user ? (
+    <div>"hello"</div>
+  ) : (
+    (setTimeout(() => navigate('/signIn')), 3000)
+  );
+};
 
-export default Home
+export default Home;
