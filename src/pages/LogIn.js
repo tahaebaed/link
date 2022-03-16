@@ -23,6 +23,7 @@ const LogIn = () => {
     } catch (error) {
       const err = error.message.split(': ')[1].split(' (');
       setError(err[0]);
+      console.log(error.message);
     }
   };
   return (

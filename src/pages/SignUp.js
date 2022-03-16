@@ -40,7 +40,7 @@ const SignUp = () => {
           onSubmit={(values, { setSubmitting }) => {
             auth.createUserWithEmailAndPassword(values.email, values.password);
             setSubmitting(false);
-            console.log(values, 'teeeeest');
+            console.table(values, 'teeeeest');
           }}
         >
           {({
