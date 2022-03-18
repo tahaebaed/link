@@ -1,0 +1,83 @@
+.home__page {
+  position: relative;
+  overflow: hidden;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  .side_menu_left {
+    position: fixed;
+    list-style: none;
+    padding-top: 5rem;
+    padding-left: 0.8rem;
+    &-item {
+      height: 3rem;
+      &_img {
+        border-radius: 50%;
+      }
+      &_profile {
+        margin-left: 0.5rem;
+      }
+    }
+    i {
+      font-size: 23px;
+      margin-right: 0.7rem;
+      padding-left: 0.1rem;
+    }
+  }
+  .main {
+    margin-top: 5rem;
+    &-add_post {
+      background: #fff;
+      border-radius: 30px;
+      border: 1px solid #707070;
+      &-img {
+        border-radius: 50%;
+        margin-top: 1rem;
+      }
+      &-input {
+        border-radius: 1rem;
+        height: 3rem;
+        margin: 1rem 2rem 0;
+        width: 70%;
+        padding: 1rem;
+      }
+      p {
+        margin-left: 8.5rem;
+        margin-top: -1rem;
+      }
+    }
+    &-posts {
+      background: #fff;
+      border: 1px solid #707070;
+      margin: 2rem -13px;
+      width: 660px;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+
+      &_post {
+        border-bottom: 1px solid #e7e7e7;
+        margin-bottom: 1rem;
+        &-info {
+          margin: 0 0 1rem;
+        }
+        &-img {
+          width: 100%;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+  .side_menu_right {
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    &-item {
+      margin-bottom: 1rem;
+      &_img {
+        border-radius: 50%;
+      }
+      &_profile {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

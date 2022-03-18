@@ -14,7 +14,7 @@ function NavBar() {
     !user && navigate('/signIn');
   };
   return user ? (
-    <Navbar>
+    <Navbar bg='light' fixed='top'>
       <Container>
         <Navbar.Brand bg='light' href='/home'>
           <img src={logo} alt='link logo display' width={'75px'} />
