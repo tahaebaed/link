@@ -1,0 +1,15 @@
+.navbar {
+  &-search_wrapper {
+    width: min(10px);
+    .bi-search {
+      &::before {
+        position: relative;
+        left: calc(146% - 0px);
+      }
+    }
+    &-search_input {
+      margin-left: -10px;
+      padding-left: 2.8rem !important;
+    }
+  }
+}
