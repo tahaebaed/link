@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import { Navbar, Container, Nav, Button } from 'react-bootstrap';
+import { Navbar, Container, Nav, Button, FormControl } from 'react-bootstrap';
 import { AuthContext } from '../store/context/AuthContext';
-import logo from '../assets/attachment_15960883.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from '../store/context/FireContext';
+import logo from '../assets/attachment_15960883.svg';
+import '../sass/navbar.scss';
 
 function NavBar() {
   const { user } = useContext(AuthContext);
@@ -19,6 +20,15 @@ function NavBar() {
         <Navbar.Brand bg='light' href='/home'>
           <img src={logo} alt='link logo display' width={'75px'} />
         </Navbar.Brand>
+        <Navbar.Collapse className='navbar-search_wrapper'>
+          <i class='bi bi-search'></i>
+          <FormControl
+            type='search'
+            placeholder='Search'
+            className='me-2 navbar-search_wrapper-search_input'
+            aria-label='Search'
+          />
+        </Navbar.Collapse>
         <Navbar.Toggle />
         <Navbar.Collapse className='justify-content-end'>
           <Navbar.Text>
