@@ -1,13 +1,14 @@
 import Routing from './utils/Routing';
-import './App.scss';
 import NavBar from './layout/NavBar';
+import { Container } from 'react-bootstrap';
+import './App.scss';
 
 function App() {
   return (
-    <div className='container'>
+    <Container >
       <NavBar />
       <Routing />
-    </div>
+    </Container>
   );
 }
 
