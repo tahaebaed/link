@@ -68,15 +68,15 @@
         border-radius: 1rem;
         border: 1px solid #707070;
         height: 3rem;
-        margin: 1rem 2rem 0;
+        margin: 1rem 2rem 1rem;
         width: 70%;
-        padding: 1rem;
+        padding: 0.6rem 1rem 1rem;
         background: #f7f7f7;
+        font-weight: 400;
         cursor: pointer;
         &:hover {
           background: #ccc;
           transition: 0.3s all ease-in-out;
-
         }
       }
       &-button {
@@ -91,10 +91,10 @@
       &_post {
         border: 1px solid #c3c3c3;
         background: #fff;
-
         margin-bottom: 1rem;
         box-shadow: 3px 0px 10px 0px #0000004f;
         border-radius: 10px;
+
         &-info {
           margin: 1rem 2rem;
           &_title {

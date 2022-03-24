@@ -35,7 +35,7 @@ const Main = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
             quos placeat enim incidunt ipsa ab atque nesciunt dignissimos fuga
             exercitationem dolorem expedita ex, minima officiis delectus quaerat
-            repellat suscipit sapiente!{' '}
+            repellat suscipit sapiente!
           </div>
           <img
             className='main-posts_post-img'
@@ -45,9 +45,7 @@ const Main = () => {
           <Row className='main-posts_post-Reaction justify-content-sm-center justify-content-lg-start'>
             <Col className='text-center'>
               <Button variant='text-primary'>
-
-                 <i className='bi bi-hand-thumbs-up mt-2 me-1'></i> Like
-
+                <i className='bi bi-hand-thumbs-up mt-2 me-1'></i> Like
               </Button>
             </Col>
             <Col className='text-center'>
@@ -100,9 +98,7 @@ const Main = () => {
           <Row className='main-posts_post-Reaction'>
             <Col className='text-center'>
               <Button variant='text-primary'>
-
-                     <i className='bi bi-hand-thumbs-up mt-2 me-1'></i> Like
-
+                <i className='bi bi-hand-thumbs-up mt-2 me-1'></i> Like
               </Button>
             </Col>
             <Col className='text-center'>
