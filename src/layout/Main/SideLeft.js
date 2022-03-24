@@ -5,10 +5,10 @@ const SideLeft = () => {
   return (
     <Col xl='3'>
       <ul className='side_menu_left'>
-        <li className='side_menu_left_item d-flex align-items-center'>
+        <li className='side_menu_left_item d-flex flex-column align-items-center'>
           <img
             className='side_menu_left-item_img'
-            src='https://picsum.photos/28'
+            src='https://picsum.photos/80'
             alt='User Profile'
             title='User Profile'
           />

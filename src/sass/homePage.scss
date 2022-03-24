@@ -5,13 +5,33 @@
   font-weight: 500;
   text-decoration: none;
   .side_menu_left {
+    background: #fff;
     list-style: none;
-    padding-top: 5rem;
-    padding-left: 0rem;
+    padding: 2rem 0.5rem;
+    border-radius: 12px;
+    margin-left: 6px;
+    margin-top: 5rem;
+    width: 250px;
+    box-shadow: 1px 0px 10px 0px #0000004f;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background: #707070;
+      height: 72px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 12px 12px 0 0;
+      z-index: 0;
+    }
     &-item {
       height: 3rem;
+      margin: 0 0 0 1rem;
+
       &_img {
         border-radius: 50%;
+        z-index: 1;
       }
       &_profile {
         margin-left: 0.5rem;
@@ -32,7 +52,7 @@
     &-add_post {
       background: #fff;
       border-radius: 10px;
-      border: 1px solid #707070;
+      border: 1px solid #c3c3c3;
       padding-left: 2rem;
       box-shadow: 3px 0px 10px 0px #0000004f;
 
@@ -55,16 +75,16 @@
         }
       }
       &-button {
-        margin-left: 8.5rem;
+        margin-left: 7rem;
         margin-top: -3rem;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
     &-posts {
       margin: 2rem -13px;
 
       &_post {
-        border: 1px solid #707070;
+        border: 1px solid #c3c3c3;
         background: #fff;
 
         margin-bottom: 1rem;
@@ -114,6 +134,40 @@
   .side_menu_right {
     font-size: 0.7rem;
     margin-top: 2.5rem;
+    &-toggle {
+      background: white;
+      border: 1px solid #cbc6c6;
+      width: 300px;
+      height: 60px;
+      border-radius: 16px 16px 0 0;
+      position: fixed;
+      right: 15px;
+      bottom: 0;
+      z-index: 1030;
+      &_handler {
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 20px 12px 0;
+      }
+    }
+    &-toggled {
+      background: rgb(255, 255, 255);
+      border: 1px solid #cbc6c6;
+      width: 300px;
+      height: 550px;
+      border-radius: 16px 16px 0 0;
+      position: fixed;
+      right: 15px;
+      bottom: 0;
+      z-index: 1030;
+      &_handler {
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 9px 12px 0;
+      }
+    }
     &-item {
       margin-bottom: 1rem;
       &_img {

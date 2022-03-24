@@ -4,7 +4,7 @@ import AddPost from './AddPost';
 
 const Main = () => {
   return (
-    <Col xl='7' className='main'>
+    <Col xl='6' className='main'>
       <AddPost />
       <div className='main-posts'>
         <div className='main-posts_post'>

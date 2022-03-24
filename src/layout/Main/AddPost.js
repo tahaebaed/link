@@ -7,7 +7,7 @@ const AddPost = () => {
       <Col m='1' className='main-add_post'>
         <img
           className='main-add_post-img'
-          src='https://picsum.photos/100'
+          src='https://picsum.photos/85'
           alt='User Profile'
           title='User Profile'
         />
