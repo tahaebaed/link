@@ -1,7 +1,7 @@
+
 import { Drawer } from '@mui/material';
 import React, { useState } from 'react';
 import { Row } from 'react-bootstrap';
-
 import AddPostPopup from './AddPostPopup';
 const AddPost = () => {
   const [popupClose, setpopupClose] = useState(false);
@@ -13,29 +13,30 @@ const AddPost = () => {
 
   };
   return (
+
     <>
       <Row>
-        <div className='main-add_post'>
+     <Col m='1' className='main-add_post'>
           <img
             className='main-add_post-img'
-            src='https://picsum.photos/100'
+            src='https://picsum.photos/85'
             alt='User Profile'
             title='User Profile'
           />
-          {/* <input
-            className='main-add_post-input'
-            type='text'
-            placeholder='good morning, lets hit news...'
-            disabled
 
-          /> */}
           <div className='main-add_post-input' onClick={handleOpenPopup}>
             good morning, lets hit news...
           </div>
-          <p>
-            <i className='bi bi-images' /> Add Photo
-          </p>
-        </div>
+         <Button variant='text' className='main-add_post-button'>
+          <i className='bi bi-images' /> Add Photo
+        </Button>
+        <Button variant='text' className='main-add_post-button ms-0'>
+          <i class='bi bi-camera-video'></i> Add Video
+        </Button>
+        <Button variant='text' className='main-add_post-button ms-0'>
+          <i class='bi bi-calendar-event'></i> Add Event
+        </Button>
+        </Col>
       </Row>
       <div className="drawer">
         <Drawer
