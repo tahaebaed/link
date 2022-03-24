@@ -64,14 +64,19 @@
         }
       }
       &-input {
+        display: inline-block;
         border-radius: 1rem;
         border: 1px solid #707070;
         height: 3rem;
         margin: 1rem 2rem 0;
         width: 70%;
         padding: 1rem;
-        &:focus {
-          border: 1.5px solid #707070;
+        background: #f7f7f7;
+        cursor: pointer;
+        &:hover {
+          background: #ccc;
+          transition: 0.3s all ease-in-out;
+
         }
       }
       &-button {
@@ -178,4 +183,13 @@
       }
     }
   }
+}
+.popUp_Container {
+  background-color: white;
+  margin: 50px auto;
+  min-height: 300px;
+  border-radius: 10px;
+  min-width: 500px;
+  text-align: center;
+  padding: 20px;
 }
