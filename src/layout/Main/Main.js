@@ -23,7 +23,7 @@ const Main = () => {
           <Row className='main-posts_post-Reaction'>
             <Col xl='2'>
               <Button variant='text-primary'>
-                <i class='bi bi-hand-thumbs-up'></i> Like
+                <i className='bi bi-hand-thumbs-up'></i> Like
               </Button>
             </Col>
             <Col xl='3'>
@@ -50,7 +50,7 @@ const Main = () => {
           <Row className='main-posts_post-Reaction'>
             <Col xl='2'>
               <Button variant='text-primary'>
-                <i class='bi bi-hand-thumbs-up'></i> Like
+                <i className='bi bi-hand-thumbs-up'></i> Like
               </Button>
             </Col>
             <Col xl='3'>

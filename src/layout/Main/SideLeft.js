@@ -17,15 +17,15 @@ const SideLeft = () => {
           </a>
         </li>
         <li className='side_menu_left-item d-flex align-items-center'>
-          <i class='bi bi-person-lines-fill' />
+          <i className='bi bi-person-lines-fill' />
           <a href='/'>Linkers</a>
         </li>
         <li className='side_menu_left-item d-flex align-items-center'>
-          <i class='bi bi-person-lines-fill' />
+          <i className='bi bi-person-lines-fill' />
           <a href='/'>Pages</a>
         </li>
         <li className='side_menu_left-item d-flex align-items-center'>
-          <i class='bi bi-person-lines-fill' />
+          <i className='bi bi-person-lines-fill' />
           <a href='/'>Groups</a>
         </li>
       </ul>
