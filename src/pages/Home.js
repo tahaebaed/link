@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../store/context/AuthContext';
+
 import { Row } from 'react-bootstrap';
 import SideLeft from '../layout/Main/SideLeft';
 import Main from '../layout/Main/Main';
@@ -9,6 +10,7 @@ import SideRight from '../layout/Main/SideRight';
 
 const Home = () => {
   const { user } = useContext(AuthContext);
+  // const {userInfo}=UseFireStore()
   const navigate = useNavigate();
   return user ? (
     <>

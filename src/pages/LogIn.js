@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../store/context/FireContext';
+import logIn_img from "../assets/mobile-login-concept-illustration_114360-83.webp" 
 
 const initialState = { email: '', password: '' };
 
@@ -27,8 +28,11 @@ const LogIn = () => {
     }
   };
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className='row align-items-center'>
+      <div className='login__img col-6' >
+    <img src={logIn_img} alt='' className='w-100'/>
+      </div>
+      <form onSubmit={handleSubmit} className="col-6 ">
         <div className='mb-3'>
           <label htmlFor='exampleInputEmail1' className='form-label'>
             Email address
